@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Политика конфиденциальности — Французский с нуля</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #16181d; --muted: #5b6472;
+    --accent: #2049c7; --line: #e4e7ee; --card: #f7f8fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101218; --fg: #e9ecf2; --muted: #a0a8b8;
+      --accent: #8fa8ff; --line: #262a35; --card: #171a22;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg); color: var(--fg);
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 1rem; letter-spacing: -0.02em; }
+  h2 { font-size: 1.3rem; margin: 2.5rem 0 0.75rem; }
+  h3 { font-size: 1.05rem; margin: 1.75rem 0 0.5rem; }
+  p, li { color: var(--fg); }
+  em { color: var(--muted); font-style: normal; font-size: 0.95rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.35rem 0; }
+  a { color: var(--accent); }
+  hr {
+    border: 0; border-top: 1px solid var(--line);
+    margin: 3rem 0 2rem;
+  }
+  .lead { font-size: 1.15rem; color: var(--muted); }
+  strong { font-weight: 600; }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>Политика конфиденциальности — «Французский с нуля»</h1>
+<p><em>Действует с: 14 августа 2026 г.</em></p>
+<h2>Коротко</h2>
+<p>Приложение работает офлайн. Без входа в аккаунт оно **не отправляет о вас</p>
+<p>ничего** и никуда. Аккаунт и подписка добровольны: они нужны только тем, кто</p>
+<p>хочет синхронизировать прогресс между устройствами или открыть платные темы.</p>
+<h2>Что остаётся только на вашем устройстве</h2>
+<ul>
+<li><strong>Прогресс обучения</strong>: пройденные фразы, ответы, расписание повторений,</li>
+</ul>
+<p>  серии дней, избранное, настройки. Удаление приложения удаляет эти данные.</p>
+<ul>
+<li><strong>Микрофон</strong> включается только в упражнении «Произношение» и только в тот</li>
+</ul>
+<p>  момент, когда вы сами нажали кнопку записи. Распознавание выполняет</p>
+<p>  системный сервис вашего устройства. Записи голоса мы не получаем и не храним.</p>
+<ul>
+<li><strong>Озвучка</strong> — системный синтезатор речи устройства. Тексты никуда не уходят.</li>
+<li><strong>Напоминания</strong> создаются на самом устройстве, без сервера.</li>
+</ul>
+<h2>Что уходит на сервер — и только если вы этого захотели</h2>
+<p><strong>Если вы создали аккаунт</strong> (адрес электронной почты и пароль):</p>
+<ul>
+<li>адрес электронной почты — чтобы вы могли войти;</li>
+<li>прогресс обучения — чтобы он не потерялся при смене телефона.</li>
+</ul>
+<p><strong>Если вы оформили подписку:</strong></p>
+<ul>
+<li>идентификатор покупки от Google Play или App Store и срок её действия.</li>
+</ul>
+<p>  Это нужно, чтобы подтвердить оплату и открыть платные темы. **Данные вашей</p>
+<p>  карты мы не получаем никогда** — платёж целиком обрабатывает магазин</p>
+<p>  приложений;</p>
+<ul>
+<li>отметка о том, что пробный период уже использовался, — чтобы им нельзя</li>
+</ul>
+<p>  было воспользоваться дважды.</p>
+<p><strong>Если вы пожаловались на перевод или фразу</strong> — текст жалобы и то, к какой</p>
+<p>фразе она относится.</p>
+<p><strong>Платные материалы</strong> скачиваются с нашего сервера по ссылке, действующей</p>
+<p>ограниченное время. Скачанное хранится на вашем устройстве и работает без</p>
+<p>интернета.</p>
+<p>Ничего из перечисленного не собирается автоматически: без аккаунта и без</p>
+<p>подписки приложение к серверу не обращается.</p>
+<h2>Кто обрабатывает данные</h2>
+<p>Данные хранятся в <strong>Supabase</strong> (инфраструктура Amazon Web Services, дата-центр</p>
+<p>в <strong>Париже, Франция</strong>), который выступает обработчиком данных по нашему</p>
+<p>поручению. Данные не покидают Европейский союз.</p>
+<h2>Чего мы не делаем</h2>
+<ul>
+<li>Не показываем рекламу и не встраиваем рекламные трекеры.</li>
+<li>Не продаём и не передаём данные третьим лицам.</li>
+<li>Не собираем геолокацию, контакты, список приложений и историю устройства.</li>
+<li>Не профилируем вас и не принимаем автоматических решений о вас.</li>
+</ul>
+<h2>Сколько храним</h2>
+<p>Данные аккаунта и прогресс хранятся, пока существует ваш аккаунт. Сведения о</p>
+<p>покупках храним, пока действует подписка, и ещё три года после — этого требует</p>
+<p>бухгалтерская и налоговая отчётность.</p>
+<h2>Ваши права</h2>
+<p>Вы вправе получить копию своих данных, исправить их, удалить или забрать в</p>
+<p>переносимом виде, а также отозвать согласие. Прогресс можно выгрузить файлом</p>
+<p>прямо в приложении, без обращения к нам. Для удаления аккаунта и всех</p>
+<p>серверных данных напишите на адрес ниже — сделаем в течение 30 дней. Если</p>
+<p>ответ вас не устроит, вы вправе обратиться в надзорный орган по защите данных</p>
+<p>(во Франции — CNIL).</p>
+<h2>Дети</h2>
+<p>Приложение подходит для любого возраста. Мы не собираем данные детей осознанно</p>
+<p>и не показываем рекламу. Для оформления подписки нужен возраст, начиная с</p>
+<p>которого магазин приложений разрешает покупки.</p>
+<h2>Изменения</h2>
+<p>Существенные изменения мы отражаем на этой странице и меняем дату вверху до</p>
+<p>того, как изменения вступят в силу.</p>
+<h2>Контакт</h2>
+<p>По вопросам конфиденциальности и удаления данных: <strong><a href="mailto:ggooglov9@gmail.com">ggooglov9@gmail.com</a></strong></p>
+<hr>
+<h1>Privacy Policy — “French from Zero”</h1>
+<p><em>Effective: August 14, 2026</em></p>
+<h2>In short</h2>
+<p>The app works offline. Without an account it <strong>sends nothing about you</strong></p>
+<p>anywhere. An account and a subscription are optional: they exist only for</p>
+<p>people who want to sync progress across devices or unlock paid topics.</p>
+<h2>Stays on your device only</h2>
+<p>Learning progress (phrases studied, answers, review schedule, streaks,</p>
+<p>favorites, settings). Uninstalling the app deletes it. The microphone is used</p>
+<p>only in the Pronunciation exercise, at the moment you press record; recognition</p>
+<p>is performed by your device's system service and we never receive or store</p>
+<p>voice recordings. Speech is synthesised by your device. Reminders are created</p>
+<p>locally.</p>
+<h2>Sent to our server — only if you chose it</h2>
+<p><strong>With an account:</strong> your email address (so you can sign in) and your learning</p>
+<p>progress (so it survives a change of phone).</p>
+<p><strong>With a subscription:</strong> the purchase identifier issued by Google Play or the</p>
+<p>App Store and its expiry date, used to confirm payment and unlock paid topics.</p>
+<p><strong>We never receive your card details</strong> — payment is handled entirely by the</p>
+<p>app store. We also record that a free trial has been used, so it cannot be</p>
+<p>claimed twice.</p>
+<p><strong>If you report a phrase or translation:</strong> the text of your report and which</p>
+<p>phrase it concerns.</p>
+<p><strong>Paid materials</strong> are downloaded from our server through a time-limited link</p>
+<p>and then stored on your device for offline use.</p>
+<p>None of this is collected automatically: without an account and without a</p>
+<p>subscription the app never contacts our server.</p>
+<h2>Who processes the data</h2>
+<p>Data is stored with <strong>Supabase</strong> (Amazon Web Services infrastructure, data</p>
+<p>centre in <strong>Paris, France</strong>), acting as our data processor. Data does not</p>
+<p>leave the European Union.</p>
+<h2>What we never do</h2>
+<p>No advertising, no ad trackers, no sale or sharing of data with third parties,</p>
+<p>no location, contacts, installed-app list or device history, no profiling and</p>
+<p>no automated decisions about you.</p>
+<h2>Retention</h2>
+<p>Account data and progress are kept while your account exists. Purchase records</p>
+<p>are kept for the life of the subscription and three years afterwards, as</p>
+<p>required by accounting and tax rules.</p>
+<h2>Your rights</h2>
+<p>You may obtain a copy of your data, correct it, delete it, take it in a</p>
+<p>portable form, and withdraw consent. Progress can be exported to a file inside</p>
+<p>the app without contacting us. To delete your account and all server-side data,</p>
+<p>write to the address below — we act within 30 days. If you are unsatisfied,</p>
+<p>you may lodge a complaint with a data protection authority (in France, CNIL).</p>
+<h2>Children</h2>
+<p>The app is suitable for all ages. We do not knowingly collect children's data</p>
+<p>and we show no advertising. Subscribing requires the minimum age at which your</p>
+<p>app store permits purchases.</p>
+<h2>Changes</h2>
+<p>Material changes are published on this page, with the date above updated</p>
+<p>before they take effect.</p>
+<h2>Contact</h2>
+<p>Privacy and data deletion requests: <strong><a href="mailto:ggooglov9@gmail.com">ggooglov9@gmail.com</a></strong></p>
+<hr>
+<h1>Politique de confidentialité — « Le français à partir de zéro »</h1>
+<p><em>En vigueur le 14 août 2026</em></p>
+<h2>En bref</h2>
+<p>L'application fonctionne hors ligne. Sans compte, elle <strong>n'envoie rien</strong> vous</p>
+<p>concernant. Le compte et l'abonnement sont facultatifs : ils servent uniquement</p>
+<p>à synchroniser la progression entre appareils ou à débloquer les thèmes payants.</p>
+<h2>Reste uniquement sur votre appareil</h2>
+<p>La progression (phrases étudiées, réponses, calendrier de révision, séries,</p>
+<p>favoris, réglages). La désinstallation les supprime. Le microphone n'est utilisé</p>
+<p>que dans l'exercice de prononciation, au moment où vous appuyez sur le bouton ;</p>
+<p>la reconnaissance est effectuée par le service système de votre appareil et nous</p>
+<p>ne recevons ni ne conservons aucun enregistrement vocal. La synthèse vocale est</p>
+<p>celle de votre appareil. Les rappels sont créés localement.</p>
+<h2>Envoyé à notre serveur — seulement si vous l'avez choisi</h2>
+<p><strong>Avec un compte :</strong> votre adresse e-mail (pour vous connecter) et votre</p>
+<p>progression (pour qu'elle survive à un changement de téléphone).</p>
+<p><strong>Avec un abonnement :</strong> l'identifiant d'achat délivré par Google Play ou</p>
+<p>l'App Store et sa date d'expiration, afin de confirmer le paiement et de</p>
+<p>débloquer les thèmes payants. <strong>Nous ne recevons jamais vos données bancaires</strong> —</p>
+<p>le paiement est traité intégralement par la boutique. Nous enregistrons aussi</p>
+<p>qu'une période d'essai a été utilisée, afin qu'elle ne puisse pas l'être deux fois.</p>
+<p><strong>Si vous signalez une phrase ou une traduction :</strong> le texte de votre signalement</p>
+<p>et la phrase concernée.</p>
+<p><strong>Les contenus payants</strong> sont téléchargés depuis notre serveur via un lien à</p>
+<p>durée limitée, puis conservés sur votre appareil pour un usage hors ligne.</p>
+<h2>Qui traite les données</h2>
+<p>Les données sont hébergées chez <strong>Supabase</strong> (infrastructure Amazon Web Services,</p>
+<p>centre de données à <strong>Paris, France</strong>), sous-traitant agissant pour notre compte.</p>
+<p>Les données ne quittent pas l'Union européenne.</p>
+<h2>Ce que nous ne faisons jamais</h2>
+<p>Aucune publicité, aucun traceur publicitaire, aucune vente ni partage de données,</p>
+<p>aucune collecte de géolocalisation, de contacts, de la liste des applications ou</p>
+<p>de l'historique de l'appareil, aucun profilage ni décision automatisée.</p>
+<h2>Conservation</h2>
+<p>Les données de compte et la progression sont conservées tant que votre compte</p>
+<p>existe. Les informations d'achat sont conservées pendant la durée de</p>
+<p>l'abonnement puis trois ans, conformément aux obligations comptables et fiscales.</p>
+<h2>Vos droits</h2>
+<p>Vous pouvez accéder à vos données, les rectifier, les effacer, les récupérer</p>
+<p>dans un format portable et retirer votre consentement. La progression peut être</p>
+<p>exportée dans un fichier depuis l'application, sans nous contacter. Pour</p>
+<p>supprimer votre compte et toutes les données côté serveur, écrivez à l'adresse</p>
+<p>ci-dessous — nous agissons sous 30 jours. En cas de désaccord, vous pouvez</p>
+<p>saisir la CNIL.</p>
+<h2>Enfants</h2>
+<p>L'application convient à tous les âges. Nous ne collectons pas sciemment de</p>
+<p>données d'enfants et n'affichons aucune publicité. L'abonnement requiert l'âge</p>
+<p>minimum fixé par votre boutique d'applications.</p>
+<h2>Modifications</h2>
+<p>Les modifications importantes sont publiées sur cette page, la date ci-dessus</p>
+<p>étant mise à jour avant leur entrée en vigueur.</p>
+<h2>Contact</h2>
+<p>Confidentialité et suppression des données : <strong><a href="mailto:ggooglov9@gmail.com">ggooglov9@gmail.com</a></strong></p>
+
+<footer>Французский с нуля · ggooglov9@gmail.com</footer>
+</main>
+</body>
+</html>
