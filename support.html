@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Поддержать автора — Языки с нуля</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #16181d; --muted: #5b6472;
+    --accent: #2049c7; --line: #e4e7ee; --card: #f7f8fb; --ok: #14804a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101218; --fg: #e9ecf2; --muted: #a0a8b8;
+      --accent: #8fa8ff; --line: #262a35; --card: #171a22; --ok: #4cc38a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg); color: var(--fg);
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 40rem; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 1rem; letter-spacing: -0.02em; }
+  h2 { font-size: 1.25rem; margin: 2rem 0 0.75rem; }
+  p { margin: 0.5rem 0; }
+  .muted { color: var(--muted); font-size: 0.95rem; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 3rem 0; }
+  nav a { margin-right: 1rem; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 1rem 1.25rem; margin: 0.75rem 0;
+  }
+  .label { font-weight: 600; }
+  code {
+    display: block; margin: 0.4rem 0 0.6rem; padding: 0.55rem 0.7rem;
+    background: var(--bg); border: 1px solid var(--line); border-radius: 10px;
+    font: 15px/1.4 ui-monospace, "SFMono-Regular", Consolas, monospace;
+    overflow-wrap: anywhere; user-select: all;
+  }
+  button {
+    font: inherit; font-size: 0.95rem; cursor: pointer;
+    padding: 0.4rem 0.9rem; border-radius: 999px;
+    border: 1px solid var(--accent); background: transparent; color: var(--accent);
+  }
+  button.done { border-color: var(--ok); color: var(--ok); }
+  .paypal {
+    display: inline-block; margin-top: 0.4rem; padding: 0.55rem 1.1rem;
+    border-radius: 999px; background: var(--accent); color: #fff; text-decoration: none;
+    font-weight: 600;
+  }
+  @media (prefers-color-scheme: dark) { .paypal { color: #101218; } }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#ru">Русский</a><a href="#en">English</a></nav>
+
+<section id="ru">
+<h1>Поддержать автора «Языков с нуля»</h1>
+<p>Приложение бесплатное, все уроки, слова и игры открыты для всех. Если хотите
+сказать спасибо — здесь можно поддержать автора. Это добровольно и ничего в
+приложении не открывает.</p>
+
+<h2>PayPal</h2>
+<div class="card">
+  <a class="paypal" href="https://paypal.me/ISLAMAKHTAKHANOV386" rel="noopener">Поддержать через PayPal</a>
+  <p class="muted">Откроется страница PayPal; сумму выбираете вы.</p>
+</div>
+
+<h2>Криптовалюта</h2>
+<div class="card">
+  <p class="label">Ethereum (ETH, сеть Ethereum)</p>
+  <code id="eth-ru">0x49EC2E19722d57e35A97C1eC11834E69A70ceC03</code>
+  <button type="button" data-copy="eth-ru">Скопировать адрес</button>
+</div>
+<div class="card">
+  <p class="label">Bitcoin (BTC)</p>
+  <code id="btc-ru">bc1qn3a5svu68kc0gppc4zaa8uzks3y4vv73zmcysz</code>
+  <button type="button" data-copy="btc-ru">Скопировать адрес</button>
+</div>
+<p class="muted">Проверьте адрес и сеть перед отправкой: перевод в криптовалюте
+нельзя отменить. Отправляйте ETH только в сети Ethereum, BTC — только в сети Bitcoin.</p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>Support the author of “Languages from Zero”</h1>
+<p>The app is free: all lessons, words and games are open to everyone. If you
+would like to say thank you, you can support the author here. It is voluntary
+and does not unlock anything in the app.</p>
+
+<h2>PayPal</h2>
+<div class="card">
+  <a class="paypal" href="https://paypal.me/ISLAMAKHTAKHANOV386" rel="noopener">Support via PayPal</a>
+  <p class="muted">The PayPal page opens; you choose the amount.</p>
+</div>
+
+<h2>Cryptocurrency</h2>
+<div class="card">
+  <p class="label">Ethereum (ETH, Ethereum network)</p>
+  <code id="eth-en">0x49EC2E19722d57e35A97C1eC11834E69A70ceC03</code>
+  <button type="button" data-copy="eth-en">Copy address</button>
+</div>
+<div class="card">
+  <p class="label">Bitcoin (BTC)</p>
+  <code id="btc-en">bc1qn3a5svu68kc0gppc4zaa8uzks3y4vv73zmcysz</code>
+  <button type="button" data-copy="btc-en">Copy address</button>
+</div>
+<p class="muted">Double-check the address and network before sending: crypto
+transfers cannot be reversed. Send ETH only on the Ethereum network and BTC only
+on the Bitcoin network.</p>
+</section>
+</main>
+<script>
+  document.querySelectorAll('button[data-copy]').forEach(function (b) {
+    var label = b.textContent;
+    b.addEventListener('click', function () {
+      var text = document.getElementById(b.dataset.copy).textContent.trim();
+      var done = function () {
+        b.classList.add('done');
+        b.textContent = b.closest('[lang="en"]') ? 'Copied ✓' : 'Скопировано ✓';
+        setTimeout(function () { b.classList.remove('done'); b.textContent = label; }, 2000);
+      };
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(done, function () {});
+      } else {
+        var r = document.createRange();
+        r.selectNodeContents(document.getElementById(b.dataset.copy));
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        try { document.execCommand('copy'); done(); } catch (e) {}
+      }
+    });
+  });
+</script>
+</body>
+</html>
